@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="form-container">
+            <h1 class="title">IP Address Tracker</h1>
+            <form class="form-elements">
+                <input id="ip_address" type="text" class="form-control" placeholder="Search for any IP address or domain">
+                <button id="search_btn" class="btn btn-dark"> > </button>
+            </form>
+        </div>
+    
+
+        <div class="results-display">
+            <div class="display-container">
+                <div class="info-block block-seperator">
+                    <h4 class="muted-title">IP Address</h4>
+                    <span id="current_ip" class="results"></span>
+                </div>
+                <div class="info-block block-seperator">
+                    <h4 class="muted-title">Location</h4>
+                    <span id="current_town" class="results"></span>
+                </div>
+                <div class="info-block block-seperator">
+                    <h4 class="muted-title">Timezone</h4>
+                    <span id="current_zone" class="results"></span>
+                </div>
+                <div class="info-block info-block-last">
+                    <h4 class="muted-title">ISP</h4>
+                    <span id="current_isp" class="results"></span>
+                </div>
+            </div>
+        </div>
+        <div id="display-map" class="map-container"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

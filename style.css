@@ -1,0 +1,134 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: inherit;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #969696;
+}
+
+.app-container{
+    width: 100%;
+}
+
+h1.title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hd {
+    height: 300px;
+}
+
+.hd img {
+    width: 100%;
+    height: 300px;
+}
+
+.form-container {
+    background: url('icon-arrow.png') no-repeat 100% 100% / cover;
+    text-align: center;
+    padding: 20px;
+    min-height: 200px;
+}
+.form-elements {
+    position: relative;
+    /* width: 380px; */
+    /* min-width: 280px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control {
+    padding: 15px;
+    min-width: 60%;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-dark {
+    color: white;
+    background-color: #000000;
+    padding: 15px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    /* position: absolute; */
+    /* right: 0; */
+    cursor: pointer;
+    margin-left: -35px;
+}
+
+.form-control::placeholder{
+    font-size: 10px;
+}
+
+.display-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    background-color: #fff;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    min-height: 130px;
+    position: relative;
+    z-index: 1000;
+    padding: 30px;
+}
+.info-block {
+    border-right: 1px solid;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.info-block-last {
+    border-right: none;
+}
+
+.muted-title {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+span.results {
+    font-weight: 500;
+    color: #2b2b2b;
+    font-size: 16px;
+}
+
+.map-container {
+    background-color: black;
+    margin-top: -70px;
+    min-height: 79vh;
+}
+
+@media(max-width:300px){
+    .app-container{
+        width: 100%;
+    }
+    .form-elements {
+        width: 60%;
+    }
+    .map-container {
+       height: 100%;
+       width: 100%;
+    }
+
+    .form-control::placeholder{
+        font-size: 12px;
+    }
+}
